@@ -9,3 +9,16 @@ if(os.path.exists(chemin_liste_course)):
         liste_course = json.load(f)
 else:
     liste_de_course = []
+
+affichage = """
+Choisissez une option:
+\t1: Ajouter un élément
+\t2: Enlever un élément
+\t3: Afficher la liste
+\t4: Vider la liste
+\t5: Terminer
+"""
+choix = "0"
+
+while(choix != "5"):
+    choix = input(affichage)
