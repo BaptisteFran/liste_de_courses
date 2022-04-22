@@ -1,4 +1,5 @@
 import os
+import json
 
 dossier_courant = os.path.dirname(__file__)
 
@@ -40,3 +41,6 @@ while(choix != "5"):
         liste_de_course.clear()
     elif(choix == "5"):
         break
+
+with open(chemin_liste_course, 'w') as f:
+    json.dump(liste_de_course, f)
