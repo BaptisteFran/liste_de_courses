@@ -31,3 +31,12 @@ while(choix != "5"):
             liste_de_course.remove(element)
         else:
             print("L'élément n'existe pas dans la liste")
+    elif(choix == "3"):
+        if(liste_de_course):
+            print("\n".join(liste_de_course))
+        else:
+            print("La liste est vide")
+    elif(choix == "4"):
+        liste_de_course.clear()
+    elif(choix == "5"):
+        break
